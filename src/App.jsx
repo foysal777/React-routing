@@ -8,14 +8,10 @@ function App() {
 
   return (
 
-     <div>
-      
+     <div>    
        <p>I am from app</p>
        <Navbar></Navbar>  
        <Outlet></Outlet>
-
-
-
       </div>
 
   )
