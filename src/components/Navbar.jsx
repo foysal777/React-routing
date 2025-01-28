@@ -3,14 +3,21 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
 
-    <div className='text-6xl text-sky-100 bg-zinc-900 ' >
-
-      <Link to={'/home'}> Home</Link>
-      <Link to={'/service'}> Service </Link>
-      <Link to={'/about'}>About</Link>
-
-
-    </div>
+    <div className="text-2xl text-sky-100 bg-zinc-100  justify-center items-center flex gap-8 p-4">
+    <Link to="/home" className="hover:text-zinc-900 transition-colors">
+      Home
+    </Link>
+    <Link to="/service" className="hover:text-sky-500 transition-colors">
+      Service
+    </Link>
+    <Link to="/about" className="hover:text-sky-500 transition-colors">
+      About
+    </Link>
+    <Link to="/product" className="hover:text-sky-500 transition-colors">
+      Product
+    </Link>
+  </div>
+  
   )
 }
 

@@ -8,6 +8,8 @@ import Home from './components/Pages/Home.jsx'
 import About from './components/Pages/About.jsx'
 import Service from './components/Pages/Service.jsx'
 import ErrorPage from './components/Pages/ErrorPage.jsx'
+import Product from './components/Pages/Product.jsx'
+import MoreInfo from './components/Pages/MoreInfo.jsx'
 
 const router = createBrowserRouter([
  {
@@ -15,7 +17,7 @@ const router = createBrowserRouter([
    element :<App></App>,
    errorElement : <ErrorPage></ErrorPage>,
 
-   Children : [
+   children : [
 
     {
       path : '/home' ,
@@ -29,6 +31,18 @@ const router = createBrowserRouter([
     {
       path : '/service',
       element : <Service></Service>
+    },
+    {
+     path : '/product' ,
+     loader : () => fetch('https://fakestoreapi.com/products'),
+     element : <Product></Product>
+
+    },
+    {
+         path : '/product/:productId',
+         loader : ({params}) => fetch(`https://fakestoreapi.com/products/${params.productId}`),
+         element : <MoreInfo></MoreInfo>
+
     }
   ]
  },

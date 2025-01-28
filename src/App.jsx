@@ -2,6 +2,7 @@
 import { Outlet } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Pages/Footer'
 
 function App() {
 
@@ -9,9 +10,10 @@ function App() {
   return (
 
      <div>    
-       <p>I am from app</p>
+      
        <Navbar></Navbar>  
        <Outlet></Outlet>
+       <Footer></Footer>
       </div>
 
   )
