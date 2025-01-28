@@ -11,14 +11,9 @@ const MoreInfo = () => {
   return (
     <div className='text-center font-bold text-4xl text-sky-400'>
 
-        
-
-
             <h1> {id} </h1>
             <h1> {title} </h1>
             <h1> {price} </h1>
-         
-
     </div>
   )
 }

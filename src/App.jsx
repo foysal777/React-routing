@@ -5,17 +5,13 @@ import Navbar from './components/Navbar'
 import Footer from './components/Pages/Footer'
 
 function App() {
-
-
   return (
 
-     <div>    
-      
+     <div>       
        <Navbar></Navbar>  
        <Outlet></Outlet>
        <Footer></Footer>
       </div>
-
   )
 }
 
