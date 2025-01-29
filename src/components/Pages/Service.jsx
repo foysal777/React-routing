@@ -16,7 +16,7 @@ const Service = () => {
 
     <div>
 
-      <CountContext.Provider value = {count} > 
+      <CountContext.Provider value = {{count,setCount}} > 
 
         <div className='text-center font-bold text-5xl pt-10'>
           <button onClick={Clicked} className='bg-green-500  border-2 px-6 py-3' > Count is : {count} </button>
