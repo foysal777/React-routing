@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const Navbar = () => {
+const Navbar = ({Mydata}) => {
+
+  console.log(Mydata);
   return (
 
     <div className="text-2xl text-sky-100 bg-zinc-100  justify-center items-center flex gap-8 p-4">
@@ -16,6 +18,10 @@ const Navbar = () => {
     <Link to="/product" className="hover:text-sky-500 transition-colors">
       Product
     </Link>
+
+    <Link to="/assign" state={{ Mydata }} className="hover:text-sky-500 transition-colors">
+        Assignment1
+      </Link>
   </div>
   
   )

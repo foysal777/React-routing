@@ -10,6 +10,7 @@ import Service from './components/Pages/Service.jsx'
 import ErrorPage from './components/Pages/ErrorPage.jsx'
 import Product from './components/Pages/Product.jsx'
 import MoreInfo from './components/Pages/MoreInfo.jsx'
+import Products from './components/Assignment1/Products.jsx'
 
 const router = createBrowserRouter([
  {
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
     {
       path : '/service',
       element : <Service></Service>
+    },
+    {
+
+      path : '/assign',
+      element : <Products ></Products>
     },
     {
      path : '/product' ,
