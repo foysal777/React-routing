@@ -10,9 +10,12 @@ const fetchContext = useContext(CountContext);
 
 const [a,setA] = useContext(Context1);
 
+const DateVar = new Date();
+const year = DateVar.getFullYear();
   return (
     <div>
-
+       
+       <h1> The present year is : {year} </h1>
      <h1 className='text-center text-6xl text-blue-700 p-16'>Welcome to Homepage in React </h1> 
       <h1 className='text-center text-sky-800'>Your Fetching count is : {fetchContext} </h1>
 
