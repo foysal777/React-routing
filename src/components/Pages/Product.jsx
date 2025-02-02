@@ -7,14 +7,11 @@ const Product = () => {
     console.log(products)
 
   return (
-    <div>
- 
-          {
-            products.map(product => <SingleProduct product = {product} key={product.id} ></SingleProduct>)
+    <div>  
+ {
+          products.map(product => <SingleProduct product = {product} key={product.id} ></SingleProduct>)
 
-          }
-     
-
+  }
     </div>
   )
 }
