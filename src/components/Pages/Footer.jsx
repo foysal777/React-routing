@@ -1,7 +1,12 @@
 
 const Footer = () => {
   return (
-    <div className='text-center font-bold'>  Footer   </div>
+    <div className="pt-12">
+      
+      <div className='text-center font-bold p-10 bg-amber-100'>  Footer </div>
+      
+        
+           </div>
   )
 }
 
