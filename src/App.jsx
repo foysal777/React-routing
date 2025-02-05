@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Pages/Footer'
 import ContextFun from './Contexts/Context1'
+import ChildComponent from './components/ChildToParent/ChildToParentDataPass'
 
 
 
@@ -101,12 +102,20 @@ const Mydata =
   ]
 }
 
+
+// For child component to data pass App.js components 
+
+const FetchDataChild = (data)=>{
+   console.log("From Parent : ",data);
+
+}
   return (
 
     <div>
       <ContextFun>
         <Navbar Mydata ={Mydata}  ></Navbar>
         <Outlet></Outlet>
+        <ChildComponent sendData ={FetchDataChild}  ></ChildComponent>
         <Footer></Footer>
       </ContextFun>
 
