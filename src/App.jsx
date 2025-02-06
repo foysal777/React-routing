@@ -8,6 +8,7 @@ import ChildComponent from './components/ChildToParent/ChildToParentDataPass'
 
 
 
+
 function App() {
 
 
@@ -114,6 +115,7 @@ const FetchDataChild = (data)=>{
     <div>
       <ContextFun>
         <Navbar Mydata ={Mydata}  ></Navbar>
+        
         <Outlet></Outlet>
         <ChildComponent sendData ={FetchDataChild}  ></ChildComponent>
         <Footer></Footer>

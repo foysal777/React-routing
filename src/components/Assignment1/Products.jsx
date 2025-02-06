@@ -15,7 +15,7 @@ const Products = () => {
                 
             <h1 className='bg-teal-300 text-4xl p-8 text-center'>Assignment 2</h1>
             <Assignment2></Assignment2>
-            <h1 className='bg-orange-300 text-4xl p-8 text-center'>Fashion Store</h1>
+            <h1 className='bg-orange-300 text-4xl p-8 text-center'>Resturant Store</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
                 {
                     Mydata.categories.map(item => <Card item={item} ></Card>)

@@ -4,6 +4,7 @@ import { Context1 } from '../../Contexts/Context1';
 import { FaFacebookMessenger } from "react-icons/fa";
 
 
+
 const Home = () => {
  
 const fetchContext = useContext(CountContext);
@@ -14,6 +15,8 @@ const DateVar = new Date();
 const year = DateVar.getFullYear();
   return (
     <div>
+
+   
       <div className='flex items-center justify-center pt-16 text-8xl text-blue-700'> 
        <FaFacebookMessenger />
        
